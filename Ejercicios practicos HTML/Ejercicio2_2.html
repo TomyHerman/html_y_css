@@ -1,0 +1,42 @@
+<!-- # Crea un nuevo documento HTML que cumpla los siguientes parámetros:
+* El título debe ser "Ejercicio 2.2 - Tablas en HTML"
+* El body debe contener una tabla que cumpla las siguientes características
+Las columnas serán las siguientes: "Título", "Autor", "Año de publicación", "Enlace a Amazon"
+Debe tener tres entradas, que corresponderán a tus tres libros favoritos  -->
+
+<!DOCTYPE html> <!-- comentario en html -->
+<html>
+    <head> 
+        <meta charset="utf-8"> 
+        <title> Ejercicio 2.2 - Tablas en HTML </title> 
+    </head>
+    <body>
+        <h3>Ejercicio 2.2 - Tablas en HTML</h3>
+        <table>
+            <tr> <!-- para definir las filas de las tablas -->
+                <th>Titulo</th> 
+                <th>Autor</th> <!-- Tabla Head: encabezado(Titulo) de la fila, columnas -->
+                <th>Año de publicación</th>
+                <th>Enlace a Amazon</th>
+            </tr>
+            <tr>
+                <td> La vida es Bella </td> 
+                <td> Carlos Gardel </td> <!-- Tabla Data: define la celda de una tabla que contiene datos -->
+                <td> <center> 1912 </center> </td> 
+                <td> <a href="https://www.youtube.com/watch?v=pBn5g314d5g"> La vida es Bella </a></td>
+            </tr>
+            <tr> 
+                <td> Historia y Gloria - Boca Juniors </td> 
+                <td> Garcia Marquez </td> 
+                <td> <center> 1818 </center> </td> 
+                <td> <a href="https://www.youtube.com/watch?v=jYXW3m24DFM"> Boca Juniors </a></td>
+            </tr>
+            <tr> 
+                <td> La Renga </td> 
+                <td> Tano Marciello </td>
+                <td> <center> 1945 </center> </td> 
+                <td> <a href="https://www.youtube.com/watch?v=VjEBfZSw8pY"> La Renga </a></td>
+            </tr>
+        </table>
+    </body>
+</html>

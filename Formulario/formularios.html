@@ -1,0 +1,45 @@
+<!DOCTYPE html> <!-- comentario en html -->
+<html>  
+	<head> 
+		<meta charset="utf-8"> 
+		<title> Formulario </title> 
+	</head>
+	<body>
+        <form action="resultados.html" method="GET">
+<!-- method: GET, los parámetros se pasan en el encabezado de la solicitud, se ven en la url -->
+<!-- method: POST, envía los parámetros en el cuerpo de la solicitud HTTP. Escondiéndolos de la url, CUANDO TENEMOS UN SERVIDOR -->
+            <div>
+                <label for="nombre_usuario">nombre de usuario</label>
+                <input name="nombre_usuario" type="text" id="nombre_usuario" placeholder="usuario" > <!-- required: campo requerido, obligatorio -->
+            </div>
+            <br> <!-- espacio en blanco, enter -->
+            <div>
+                <label for="password">contraseña</label> 
+                <input name="password" type="password" id="password" placeholder="contraseña" > <!-- required: campo requerido, obligatorio -->
+            </div>
+            <br>
+            <div>
+                <label for="edad">¿Cual es tu edad?</label> 
+                <input name="edad" type="number" id="edad" min="0" max="200"><!-- min: valor minimo, max: valor maximo, step="5": valor 5 en 5 -->
+            </div>
+            <br>
+            <div>
+                <label for="edad">¿Cual es tu mail?</label> 
+                <input name="email" type="email" id="email">
+            </div>
+            <br>
+            <div>
+                <label for="nacimiento">¿Cual es tu fecha de nacimiento?</label> 
+                <input name="nacimiento" type="date" id="nacimiento" min="1900" max="2024">
+            </div>
+            <br>
+            <div>
+                <label for="comentarios">Comentarios</label>
+                <textarea name="comentarios" id="comentarios" placeholder="escribir texto" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <button type="reset">Reset</button> <!-- reset: resetea todo el formulario -->
+            <button type="submit">Enviar</button> <!-- submit: envia los datos del formulario -->
+        </form>
+    </body>
+</html>
