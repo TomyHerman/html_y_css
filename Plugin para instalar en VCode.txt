@@ -1,0 +1,4 @@
+En Visual Code instalar: 
+	open in brower, para ejecutar directo de VCode al navegador, uso xampp
+	HTML End Tag Labels
+	Auto Rename Tag, para al cambiar la etiqueta, cambie la de cierre

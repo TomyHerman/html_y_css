@@ -1,0 +1,109 @@
+
+/* para editar y mirar los cambios online, se utiliza inspeccionar en la web, ahi aparece la pestaña Styles donde se puede
+   ver las propiedades del estilo, se puede cambiar para visualizarlo online, para ver como queda, y asi mismo poder cabiarlo
+   en el codigo */
+
+/* comentario en CSS */
+h1 { /* todos los h1 van a ser rojos */
+    color: red; /* propiedad a cambiar - propiedad: valor */
+}
+
+p  { /* etiqueta a cambiar o agregar un estilo, a todos los parrafos en general */
+    /*color: blue; /* color */
+    font-size: 16pt; /* tamaño fuente */
+    /*color: green; /* la ultima propiedad es la que toma, se sobreescriba la anterior */
+}
+
+/* SELECTORES DE ID */
+/*------------------*/
+#primera-noticia { /* para todos elementos con ID: #primera-noticia */
+    color: gray;
+    font-size: 12pt;
+}
+
+p#primera-noticia { /* para todos los P - parrafos con ID: #primera-noticia */
+    color: violet;
+    font-size: 18pt;
+}
+
+#segunda-noticia {
+    color: maroon;
+}
+
+#encabezado2 {
+    font-size: 9pt;
+}
+
+/* SELECTORES DE CLASS */
+/*---------------------*/
+.encabezado {
+    font-size: 24pt;
+    /*text-transform: capitalize; /* hace mayuscula a la primer letra de cada palabra */
+    text-transform: uppercase; /* hace mayuscula a todas las palabra */
+}
+
+*.warning { /* para todos los elementos que tengan CLASS warning */
+    color: crimson;
+}
+
+/*---------------------*/
+* { /* para todos los elementos que no tenga asociado la propiedad color */
+    /*color: yellow;*/
+}
+
+.autor, .fecha, .ubicacion, h3, #segunda-noticia { /* si hay varios selectores con el mismo estilo */
+    text-decoration: underline;  /* subraya todo el texto */
+}
+
+/* DISTINTAS FORMAS DE REPRESENTAR LOS COLORES */
+/*---------------------------------------------*/
+.colores { /* https://coolors.co/ pagina con paleta de colores */
+    color: orangered;
+    text-decoration: underline; 
+}
+
+.color-hexadecimal {
+    color: #7CB4B8;
+}
+
+.color-rgb {
+    color: rgb(124, 8, 241);
+}
+
+.color-rgba {
+    color: rgba(10, 10, 10, 0.85);
+}
+
+/* FONDOS */
+.fondo-txt {
+    background-color: cornflowerblue; /* color de fondo al texto */
+}
+
+.fondo-img {
+    /*background-image: url("https://colibriwp.com/blog/wp-content/uploads/2020/05/background-example.png"); /* imagen de fondo al texto */
+    background-image: url("ImagenDeFondo/fondo.jpg");
+    background-position: left bottom;
+}
+
+/* TAMAÑOS */
+.ancho {
+    background-color: #13EE34;
+    width: 100px;
+}
+
+.alto {
+    background-color: #280AD4;
+    width: 300px; /* ancho */
+    height: 500px; /* largo */
+}
+
+.tarjeta {
+    border-style: solid;
+    border-color: rgb(150, 150, 150);
+    border-width: 1px;
+    /*border-top: none;*/
+    padding: 10px 20px; /* Vertical Horizontal */
+    /*padding: 10px 20px 30px 40px; /* aparecen en el orden del reloj */
+    margin: 10px; /* margen entre elementos */
+}
+

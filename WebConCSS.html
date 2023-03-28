@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- comentario en html -->
+<html>
+    <head> 
+        <meta charset="utf-8"> 
+        <title> Trabajando con CSS </title>
+        <link rel="stylesheet" href="estilos.css"> <!-- para incluir los estilos, para acceder rapidamente link:css -->
+        <style> /* para realizar estilos directo, recomendado en un hoja de estilos */
+            html {
+                padding: 15px; /* establece el área de relleno en los cuatro lados de un elemento a la vez, borde interno */
+            }
+            h1 {
+                color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 >Custom Style Sheet - Hojas de estilos personalizados</h1>
+        <p>Parrafo - hola venga a flotar, a reee locoo vistee</p>
+        <h2 class="encabezado">Esto es la seccion noticias</h2> <!-- a traves del CLASS, por medio del SELECTOR, se puede establecer un estilo propio -->
+        <h3 id="encabezado2">Esto es la seccion noticias</h3>
+        <p id="primera-noticia">Parrafo - hola venga a flotar, a reee locoo vistee</p> <!-- a traves del ID, por medio del SELECTOR, se puede establecer un estilo propio -->
+        <p id="segunda-noticia">Parrafo - hola venga a flotar</p>
+        <span id="primera-noticia">Primera noticia sin estilos</span>
+        <p class="warning">este un texto de peligro</p>
+        <button class="warning">Boton peligro</button>
+        <div>
+            <p class="autor">Tomas Herman</p>
+            <p class="fecha">07/11/1990</p>
+            <p class="ubicacion">Argentina</p>
+        </div>
+        <button style="padding: 10px; border: none; border-radius: 10px;">Esto es un boton</button>
+        <h3 class="colores">Colores</h3>
+            <p class="color-hexadecimal">Color hexadecimal</p>
+            <p class="color-rgb">Color rgb</p>
+            <p class="color-rgba">Color rgba</p>
+        <div class="fondo-txt">
+            <p>Hola</p>
+            <h1>Esto es un h1 dentro del div</h1>
+        </div>
+        <div class="fondo-img">
+            <p>Hola</p>
+            <h1>Esto es un h1 dentro del div</h1>
+        </div>
+        <h3>Espacios y tamaños</h3>
+            <div class="ancho">
+                <h1>Cambiar el ancho</h1>
+            </div>
+            <div class="alto">
+                <h1>Cambiar la altura</h1>
+            </div>
+            <div class="tarjeta">
+                <h3 class="encabezado">Titulo de tarjeta</h3>
+                <p class="descripcion">Esta es la descripcion de la tarjeta</p>
+            </div>
+    </body>
+</html>
