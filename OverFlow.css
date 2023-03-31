@@ -1,0 +1,41 @@
+.contenedor-visible { 
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    /*padding: 15px;*/
+    overflow: visible; /* el que viene por defecto */
+}
+
+.contenedor-hidden {
+    background-color: bisque;
+    width: 300px; /* ancho */
+    height: 100px; /* altura */
+    padding: 0px 15px;
+    overflow: hidden; /* cuando desborda el texto, hidden para ocultar lo sobrante, no se puede acceder al texto */
+}
+
+.contenedor-scroll {
+    /*margin: 10px 0px; /* margen: arriba/abajo derecha/izquierda */
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding: 0px 15px;
+    overflow: scroll; /* cuando desborda el texto, crea scroll en todo el contenedor */
+}
+
+.contenedor-auto {
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding: 0px 15px;
+    overflow: auto; /* genera un scroll automaticamente en el contenedor */
+}
+
+.contenedor-scroll-x-y {
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding: 0px 15px;
+    overflow-x: hidden;
+    overflow-x: scroll;
+}

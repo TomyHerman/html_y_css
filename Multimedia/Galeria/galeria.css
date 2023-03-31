@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.imagen-principal {
+    width: 100vw; /* 100% de la pantalla */
+    opacity: 0.5; /* transparencia */
+}
+
+.imagen-principal:hover { /* hover para que se active la imagen cuando se pasa el mouse por arriba */
+    opacity: 0.9;   /* con una transparencia de */
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* espacio entre elementos */
+}
+
+.imagen-galeria {
+    width: 150px;
+}
+
+.imagen-galeria:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}

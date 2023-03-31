@@ -1,19 +1,23 @@
-<!DOCTYPE html> <!-- comentario en html -->
-<html>  
-	<head>
-		<meta charset="utf-8"> 
-		<title> Multimedia con HTML</title> 
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Multimedia con HTML</title>
+    </head>
+    <body>
         <h3>Imagenes</h3>
-        <img src="imagenes/logohtml.webp" alt="Logo HTML" width="150" height="150"> <!-- src: url imagen, alt: texto alternativo, width: ancho, height: alto  -->
-        <img src="https://c8.alamy.com/compes/2h9njcd/el-ala-y-el-logotipo-de-la-moto-de-su-empresa-2h9njcd.jpg" alt="Logpo moto" width="150" height="150">
+            <img src="imagenes/logohtml.webp" alt="Logo HTML" width="150" height="150"> <!-- src: url imagen, alt: texto alternativo, width: ancho, height: alto  -->
+            <img src="https://c8.alamy.com/compes/2h9njcd/el-ala-y-el-logotipo-de-la-moto-de-su-empresa-2h9njcd.jpg" alt="Logpo moto" width="150" height="150">
 
         <h3>Videos</h3> <!-- https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Video_codecs -->
-<!-- controls: para mostrar los controles del video, autoplay: reproduccion automatica,  muted: silencio/mute -->
-        <video src="Intro.mp4" type="video/mp4" width="300" height="300" controls //#autoplay muted //#loop></video> <!-- tipos que soporta HTML5: mp4, webm y ogg -->
-    
+            <!-- controls: para mostrar los controles del video, autoplay: reproduccion automatica, muted: silencio/mute -->
+            <video //src="videos/Intro.mp4" //type="video/mp4" width="300" height="300" controls //#autoplay muted //#loop>
+                <source src="Videos/Intro.mp4" type="video/mp4"> <!-- ambas formas de llamar al video con src estan bien -->
+            </video> <!-- tipos que soporta HTML5: mp4, webm y ogg -->
+        
         <h3>Audios</h3> <!-- https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Audio_codecs -->
-        <audio src="gnr-welcome.mp3" type="audio/mp3" controls //#autoplay //#loop></audio> <!-- tipos que soporta HTML5: mp3, wav y ogg -->
+            <audio src="gnr-welcome.mp3" type="audio/mp3" controls //#autoplay //#loop></audio> <!-- tipos que soporta HTML5: mp3, wav y ogg -->
     </body>
 </html>
