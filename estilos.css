@@ -1,19 +1,19 @@
-
 /* para editar y mirar los cambios online, se utiliza inspeccionar en la web, ahi aparece la pestaña Styles donde se puede
    ver las propiedades del estilo, se puede cambiar para visualizarlo online, para ver como queda, y asi mismo poder cabiarlo
    en el codigo */
 
 /* comentario en CSS */
-h1 { /* todos los h1 van a ser rojos */
+/*-----------------------------------------------------------------------------------------------*/
+h1 { /* todos los h1 van a ser rojos, asi es para todas las etiquetas */
     color: red; /* propiedad a cambiar - propiedad: valor */
 }
 
 p  { /* etiqueta a cambiar o agregar un estilo, a todos los parrafos en general */
-    /*color: blue; /* color */
+    /*color: blue; /* color del texto */
     font-size: 16pt; /* tamaño fuente */
     /*color: green; /* la ultima propiedad es la que toma, se sobreescriba la anterior */
 }
-
+/*-----------------------------------------------------------------------------------------------*/
 /* SELECTORES DE ID */
 /*------------------*/
 #primera-noticia { /* para todos elementos con ID: #primera-noticia */
@@ -33,7 +33,7 @@ p#primera-noticia { /* para todos los P - parrafos con ID: #primera-noticia */
 #encabezado2 {
     font-size: 9pt;
 }
-
+/*-----------------------------------------------------------------------------------------------*/
 /* SELECTORES DE CLASS */
 /*---------------------*/
 .encabezado {
@@ -42,11 +42,18 @@ p#primera-noticia { /* para todos los P - parrafos con ID: #primera-noticia */
     text-transform: uppercase; /* hace mayuscula a todas las palabra */
 }
 
+.fixed {
+    position: fixed; /* usa su espacio, elemento fijo */
+    bottom: 0px; /* bottom - abajo */
+    left: 0px;  /* left - izquierda */
+    background-color: greenyellow; /* color del fondo del elemento */
+}
+
 *.warning { /* para todos los elementos que tengan CLASS warning */
     color: crimson;
 }
 
-/*---------------------*/
+/*-----------------------------------------------------------------------------------------------*/
 * { /* para todos los elementos que no tenga asociado la propiedad color */
     /*color: yellow;*/
 }
@@ -54,9 +61,9 @@ p#primera-noticia { /* para todos los P - parrafos con ID: #primera-noticia */
 .autor, .fecha, .ubicacion, h3, #segunda-noticia { /* si hay varios selectores con el mismo estilo */
     text-decoration: underline;  /* subraya todo el texto */
 }
-
+/*-----------------------------------------------------------------------------------------------*/
 /* DISTINTAS FORMAS DE REPRESENTAR LOS COLORES */
-/*---------------------------------------------*/
+/* ------------------------------------------- */
 .colores { /* https://coolors.co/ pagina con paleta de colores */
     color: orangered;
     text-decoration: underline; 
@@ -73,10 +80,11 @@ p#primera-noticia { /* para todos los P - parrafos con ID: #primera-noticia */
 .color-rgba {
     color: rgba(10, 10, 10, 0.85);
 }
-
+/*-----------------------------------------------------------------------------------------------*/
 /* FONDOS */
+/* ------ */
 .fondo-txt {
-    background-color: cornflowerblue; /* color de fondo al texto */
+    background-color: cornflowerblue; /* color del fondo del elemento */
 }
 
 .fondo-img {
@@ -84,10 +92,11 @@ p#primera-noticia { /* para todos los P - parrafos con ID: #primera-noticia */
     background-image: url("ImagenDeFondo/fondo.jpg");
     background-position: left bottom;
 }
-
+/*-----------------------------------------------------------------------------------------------*/
 /* TAMAÑOS */
+/* ------- */
 .ancho {
-    background-color: #13EE34;
+    background-color: #13EE34; /* color del fondo del elemento */
     width: 100px;
 }
 
@@ -98,11 +107,11 @@ p#primera-noticia { /* para todos los P - parrafos con ID: #primera-noticia */
 }
 
 .tarjeta {
-    border-style: solid;
+    border-style: solid; /* estilo del borde */
     border-color: rgb(150, 150, 150);
-    border-width: 1px;
+    border-width: 1px; /* ancho del borde */
     /*border-top: none;*/
-    padding: 10px 20px; /* Vertical Horizontal */
+    padding: 10px 20px; /* espacio de arriba y abajo */
     /*padding: 10px 20px 30px 40px; /* aparecen en el orden del reloj */
     margin: 10px; /* margen entre elementos */
 }

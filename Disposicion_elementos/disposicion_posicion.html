@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Disposicion y posicion de elementos</title>
+        <link rel="stylesheet" href="css/disposicion_posicion.css"> <!-- para incluir los estilos, para acceder rapidamente link:css -->
+    </head>
+    <body>
+        <h1>Disposicion de elementos</h1>
+        <div class="div-1">Esto es un div</div>
+        <span class="span-1">Esto es un primer parrafo, re cheto y en html</span> <!-- Sirve para aplicar estilo al texto o agrupar elementos en línea -->
+        <img src="img/Diablo inmortal.jpg" alt="Logo Diablo" class="img">
+        <span class="span-2">Esto es un segundo parrafo. </span>
+        <div class="div-2">Esto es otro div</div>
+        <hr>
+        <h3>Posicionamiento en HTML</h3> <!-- para colocar varios elementos al mismo tiempo li*5 -->
+            <li>static</li> <!-- el de por defecto -->
+            <li>relative</li>
+            <li>flixed</li>
+            <li>absolute</li>
+            <li>sticky</li>
+        <div class="static">Soy un div Estatico(static)</div> <!-- static no se puede editar -->
+        <div class="relative">Soy un div Relativo(relative)</div>
+        <div class="fixed">Soy un div Fijo(fixed)</div>
+        <div class="sticky">Soy un div Fijo hasta que se hace scroll(sticky)</div>
+        <div class="relative contenedor"> <!-- elemento padre -->
+            <div class="absolute">Soy un div Absoluto(absolute)</div> <!-- elemento hijo -->
+        </div>
+        
+    </body>
+</html>

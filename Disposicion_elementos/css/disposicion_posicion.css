@@ -1,0 +1,69 @@
+/* DISPOSICION */
+/* ----------- */
+.div-1, .div-2 {
+    background-color: blue;
+}
+
+.span-1 {
+    background-color: darkcyan;
+    /*display: block; /* por defecto viene display: inline que es elemento en linea, display: block elemento bloqueado, una abajo de otro */
+    /*height: 500px; /* largo */
+}
+
+.span-2 {
+    background-color: darkcyan;
+    float: right; /* para determinar la disposicion */
+}
+
+.img {
+    width: 50px; /* ancho */
+    height: 50px; /* largo */
+}
+/*-----------------------------------------------------------------------------------------------*/
+/* POSICIONAMIENTO */
+/* --------------- */
+div { /* todos los div */
+    border: 1px solid gray; /* borde */
+    padding: 5px; /* espacio arriba y abajo */
+    margin: 5px; /* margen entre elementos */
+    background-color: white; /* color del fondo del elemento */
+}
+
+/* Posicionamiento Relativo - se posiciona en relacion al posicionamiento original */
+.relative {
+    position: relative; /* posicion relativa donde esta */
+    left: 80px; /* se corre 80px a la izquierda */
+    margin-left: 50px; /* margen de la izquierda */
+}
+
+/* Posicionamiento Fijo - se posiciona en relacion a la pantalla */
+.fixed {
+    position: fixed; /* usa su espacio, elemento fijo */
+    bottom: 0px; /* bottom - abajo */
+    left: 0px;  /* left - izquierda */
+    background-color: greenyellow;
+    z-index: 1; /* para mostrar arriba de los elementos, 0 para que se tape */
+}
+
+.relative.contenedor { /* para una CLASS de 2 palabras se usa PUNTO */
+    width: 250px;
+    height: 150px;
+    background-color: blue;
+}
+
+/* Posicionamiento Absoluto - se posiciona de forma absoluta en relacion a su elemento padre (.relative.contenedor) */
+.absolute { /* se usa mayormente con relative */
+    position: absolute; /* usa su espacio, elemento fijo */
+    top: 0px; /* top - arriba */
+    background-color: red;
+}
+
+/* Posicionamiento Pegajoso - se posiciona de forma fija hasta que se hace scroll quedando en ese lugar al pasar */
+/* relative -> fixed */
+.sticky {
+    position: sticky;
+    color: white;
+    background-color: coral;
+    top: 0px;
+    z-index: 1;
+}

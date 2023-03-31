@@ -1,0 +1,24 @@
+/* comentario en CSS */
+/* Modifica el CSS para que el primer elemento de cada lista se muestre de color rojo
+   A través del encadenamiento de selectores, haz que el primer elemento de la primera lista tenga un tamaño de letra de 2rem
+
+# Por ejemplo, sabemos que la tag html es la tag raíz de todo documento html. 
+  Dicho esto, si definimos que el font-size de este elemento será de 18 px,
+  por lo que 1rem = 18px, 2rem = 36px y así sucesivamente... 
+  Por lo general, los navegadores especifican el tamaño de fuente predeterminado para el elemento root (raíz), 16px */
+
+/* fonts.google.com fuentes de texto de Google */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Fasthand&display=swap'); /* se recomienda importar asi no en el archivo HTML */
+
+.encabezado {
+    font-family: 'Sourse Sand Pro', sans-serif;
+    font-size: larger; /* pt: puntos, px: pixeles */
+    font-size: 30px;
+    font-weight: 300; /* tipo de negrita, mas ancho o menos ancho */
+    font-style: italic;
+}
+
+#elemento-1 { /* para todos elementos con ID: #elemento-1 */
+    color: red;
+    font-size: 32px;
+}

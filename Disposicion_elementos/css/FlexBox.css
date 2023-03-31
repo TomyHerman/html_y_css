@@ -1,0 +1,36 @@
+/* comentario en CSS */
+/* https://codepen.io/enxaneta/full/adLPwv para mirar las distintas propiedades de flex */
+
+.flex {
+    background-color: yellow;
+    height: 300px;
+    display: flex; /* ordena de forma consecutiva, contenido flexible */
+    /*justify-content: center; /* contenido centrado, centra todos los elementos dentro del contenedor flex */
+    /*justify-content: space-between; /* distribuye el espacio entre los elementos */
+    justify-content: space-around; /* distribuye el espacio al rededor entre los elementos */
+    /*align-items: stretch; /* alineacion de los items, si no tiene altura(height) los elementos(.contenedor-1) por defecto la altura del contenedor(.flex) */
+    align-items: center; /* alineacion de los items, centra el contenido */
+    /*flex-wrap: nowrap; /* mantiene en linea horizontal */
+    /*flex-wrap: wrap; /* los elementos dentro del flex se distribuyen segun el tamaño de la pantalla, no se mantienen en linea horizontal si se achica la pantalla */
+}
+
+.contenedor-1 {
+    background-color: white;
+    /*height: 200px; /* altura, si no se pone, se agranda segun el texto por align-items: center; */
+    width: 200px; /* ancho */
+    border: 1px solid blue;
+}
+
+.contenedor-2 {
+    background-color: white;
+    height: 200px; /* altura */
+    width: 200px; /* ancho */
+    border: 1px solid blue;
+}
+
+.contenedor-3 {
+    background-color: white;
+    height: 200px; /* altura */
+    width: 100px; /* ancho */
+    border: 1px solid blue;
+}

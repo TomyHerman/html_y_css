@@ -1,45 +1,49 @@
-<!-- # Crea un nuevo documento HTML que cumpla los siguientes parámetros:
-* Debe estar dividido en tres secciones (etiqueta)
-* Condiciones para la primera sección
-    Debe tener un título (h1) indicando "Aprendiendo a utilizar imágenes"
-    Debes incluir una imagen de tu videojuego favorito
+<!-- # Crea un nuevo documento HTML con el título "Ganando precisión con los selectores en CSS"
+* Crea un nuevo fichero CSS e impórtalo en el documento HTML principal
+* Dentro del body crea una sección con los siguientes elementos:
+    Encabezado que contenga el texto "Lista de la compra"
+        Añade en el encabezado un atributo id con el valor "titulo"
+        Añade también un atributo class con el valor "encabezado"
+    Una lista desordenada con cinco elementos que representen artículos de la compra
+        Cada uno de los elementos debe tener un id como sigue: primer elemento "elemento-1", segundo elemento "elemento-2", etc.
+    Una lista ordenada con cinco elementos que representan los supermercados más cercanos a tu casa
+        Al igual que en la lista anterior, cada uno de los elementos debe tener un id como sigue: primer elemento "elemento-1", segundo elemento "elemento-2", etc.
+    Modifica el CSS para que el primer elemento de cada lista se muestre de color rojo
+    A través del encadenamiento de selectores, haz que el primer elemento de la primera lista tenga un tamaño de letra de 2rem  -->
 
-* Condiciones para la segunda sección
-    Debe tener un título (h1) indicando "Aprendiendo a utilizar los vídeos"
-    Descárgate cualquier vídeo de youtube
-    Debes incluir una etiqueta de vídeo que reproduzca el vídeo que acabas de descargar
-    El vídeo debe mostrar los controles, reproducirse automáticamente y en bucle, PERO inicialmente debe estar sin sonido
-
-* Condiciones para la tercera sección
-    Debe tener un título (h1) indicando "Aprendiendo a utilizar los audios"
-    Descárgate cualquier audio de una canción de youtube
-    Debes incluir una etiqueta de audio que reproduzca el audio que acabas de descargar
-    El audio debe mostrar los controles, reproducirse automáticamente y en bucle  -->
-
-    <!DOCTYPE html> <!-- comentario en html -->
+<!DOCTYPE html> <!-- comentario en html -->
 <html>
     <head> 
         <meta charset="utf-8"> 
-        <title> Ejercicio 04 - Multimedia </title> 
+        <title> Ganando precisión con los selectores en CSS </title>
+        <link rel="stylesheet" href="estilos.css"> <!-- para incluir los estilos, para acceder rapidamente link:css -->
     </head>
     <body>
         <div>
-            <h1>Seccion 1 - Aprendiendo a utilizar imágenes</h1>
+            <h1 id="titulo" class="encabezado">Lista de la compra</h1>
+            <div>
                 <div>
-                    <h3>Imagen</h3>
-                    <img src="imagenes/Diablo inmortal.jpg" alt="Imagen Diablo" width="150" height="150">
+                    <h4>Articulos</h4>
+                        <ul>    <!-- LISTA CON MARCA PUNTO / DEORDENADA <ul> y </ul> -->
+                            <li id="elemento-1"> Pera </li>
+                            <li id="elemento-2"> Banana </li>
+                            <li id="elemento-3"> Frutilla </li>
+                            <li id="elemento-4"> Manzana </li>
+                            <li id="elemento-5"> Naranja </li>
+                        </ul>
                 </div>
-            <h1>Seccion 2 - Aprendiendo a utilizar los vídeos</h1>
                 <div>
-                    <h3>Video</h3>
-                    <video src="Dragon Ball.mp4" type="video/mp4" alt="Dragon Ball" width="300" height="300" controls autoplay loop muted></video>
+                    <h4>Supermercados</h4> 
+                        <ol>    <!-- LISTA NUMERADA / ORDENADA <ol> y </ol> -->
+                            <li id="elemento-1"> Coto </li>
+                            <li id="elemento-2"> Carrefour </li>
+                            <li id="elemento-3"> SuperChino </li>
+                            <li id="elemento-4"> Dia% </li>
+                            <li id="elemento-5"> La Anonima </li>
+                        </ol>
                 </div>
-            <h1>Seccion 3 - Aprendiendo a utilizar los audios</h1>
-                <div>
-                    <h3>Audio</h3>
-                    <audio src="Se vos no mas - Iorio.mp3" type="audio/mp3" alt="Se vos no mas" controls autoplay loop></audio>
-                </div> 
+            </div>
         </div>
-
+        
     </body>
 </html>
