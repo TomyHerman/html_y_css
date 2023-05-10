@@ -4,9 +4,24 @@
     Las imágenes deben tener 300 píxeles de ancho
     Deben reagruparse (wrap) cuando el ancho del viewport cambia  */
 
-.galeria {
+.fondo {
+    background-color: rgb(209, 239, 245);
     display: flex;
     flex-wrap: wrap;
-    width: 300px; /* ancho */
     /*gap: 10px; /* espacio entre elementos */
+}
+
+.contenedor-1 {
+    background-color: white;
+    /*width: 325px; /* ancho */
+    /*height: 175px; /* altura, si no se pone, se agranda segun el texto por align-items: center; */
+    border: 1px solid blue;
+    padding: 10px; /* espacio arriba y abajo */
+    margin: 10px; /* margen entre elementos */
+}
+
+.imagen-galeria {
+    width: 300px; /* ancho */
+    height: 150px; /* altura */
+    align-items: center;
 }
