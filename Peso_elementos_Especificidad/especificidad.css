@@ -1,0 +1,45 @@
+/* (1, 0, 0, 0, 0) - Especificidad !important */ 
+/*    (1, 0, 0, 0) - Especificidad EN LINEA */ 
+/*       (2, 0, 0) - Especificidad ID x 2 */ 
+/*       (1, 0, 0) - Especificidad ID */ 
+/*       (0, 1, 0) - Especificidad CLASS */
+/*       (0, 0, 1) - Especificidad ELEMENTOS */
+/*       (0, 0, 0) - SIN Especificidad */
+
+/* Especificidad ID 100:
+----------------------------------
+    tiene mas peso que las CLASS y los ELEMENTOS, por eso aparece aqua en vez que otro color */
+#h1-id {
+    color: aqua;
+}
+
+/* Especificidad CLASS 010: 
+----------------------------------
+    tiene mas peso que los elementos basicos, los pisa por eso aparece amarillo en vez de verde */
+.h1-class { 
+    color: yellow;
+}
+
+/* Especificidad ELEMENTOS (etiqueta basica) - 001:
+----------------------------------
+    peso de los elementos a la hora de ejecutar, css lee de arriba hacia abajo los elementos */
+h1 {
+    color: blue;
+}
+/* pisa el h1 con el color verde */
+h1 {
+    color: green !important; /* al utilizar !important la especificidad es maxima, mas que la especificidad en linea, con el codigo html, no usar */
+}
+     
+p {
+    color: red;
+}
+/* Especificidad : (1, 1, 1) */
+h1#h1-id.h1-class { /* van todas las etiquetas juntas para que tome el valor del elemento, sino es cada elemento independiente */
+    color: brown;
+}
+
+/* Especificidad : (2, 1, 1) */
+h1#h1-id#otroid.h1-class { /* al tener otro id, aumenta la especificidad de elemento */
+    color: brown;
+}

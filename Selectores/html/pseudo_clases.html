@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo-Class</title>
+        <style> /* otra forma de declarar estilos */
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            .hover {
+                width: 300px;
+                height: 100px;
+                background-color: bisque;
+            }
+/* pseudo clase se accede con : */
+            .hover:hover { /* :hover cuando el raton, mouse pasa por arriba se activa */
+                background-color:  rebeccapurple;
+            }
+
+            .listado {
+                padding: 15px;
+                background-color: aquamarine;
+            }
+            
+            .listado p:first-child {
+                color: wheat;
+            }
+/* el orden tiene que ser asi, sino los estilos del link(a) se pisarian */
+            a {
+                padding: 15px;
+            }
+
+            a:link { /* a enlaces, link no visitado / no abierto */
+                color: deeppink;
+            }
+
+            a:visited { /* cuando ya fue visitado / mirado */
+                color: darkgreen
+            }
+
+            a:hover { /* cuando pasa el mouse por arriba */
+                color: blue;
+            }
+
+            a:active { /* cuando ya se a visto, activo */
+                color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hover">
+            <p>
+                hola mundo, vengo a flotar, espero que vos andes muy bien
+            </p>
+        </div>
+        <div class="listado">
+            <p>Parrafo 1</p>
+            <p>Parrafo 2</p>
+            <p>Parrafo 3</p>
+        </div>
+        <div class="enlaces">
+            <a href="https://www.google.com.ar" target="_blank">Enlace a Google</a> <!-- pestaña nueva y muestra la pagina -->
+            <a href="https://www.lamerca.com.ar" target="_blank">Enlace a La marca</a>
+        </div>
+    </body>
+</html>

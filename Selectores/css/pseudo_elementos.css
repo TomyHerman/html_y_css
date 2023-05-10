@@ -1,0 +1,49 @@
+/* para acceder a los pseudo elementos se usa :: */
+.contenedor { 
+    width: 300px;
+    height: 120px;
+    background-color: aquamarine; /* color de fondo */
+}
+
+span.frase {
+    font-style: italic;
+}
+
+span.frase::before { /* pseudo elemento, before: antes de la frase */
+    /*content: '<<';*/
+    content: '"'; /* agrega texto al elemento */
+    font-size: xx-small;
+}
+
+span.frase::after { /* pseudo elemento, after: despues de la frase */
+    /*content: '>>';*/
+    content: '"';
+    font-size: xx-small;
+}
+
+.libro {
+    background-color: bisque;
+    padding: 15px;
+    font-family: Arial;
+}
+
+.libro p::first-letter { /* first-letter: 1ra letra */
+    font-size: xx-large;
+}
+
+.libro p::first-line { /* first-line: 1ra linea */
+    color: white;
+}
+
+.libro p::selection { /* selection: cuando se selecciona el elemento o texto, por defecto en azul */
+    background-color: chocolate; /* color del fondo al seleccionar */
+    color: lime; /* color del parrafo */
+}
+/*
+.listado ul li::marker { /* dentro de la class listado accede al ul y a todos los elementos li para que tengan color rojo*/
+    /*color: red;
+}*/
+
+.listado li::marker { /* afecta a todos los elementos li a pesar que esten dentro de otro elemento  */
+    color: gold;
+}

@@ -21,7 +21,7 @@ p  { /* etiqueta a cambiar o agregar un estilo, a todos los parrafos en general 
     font-size: 12pt;
 }
 
-p#primera-noticia { /* para todos los P - parrafos con ID: #primera-noticia */
+p #primera-noticia { /* para todos los P - parrafos con ID: #primera-noticia */
     color: violet;
     font-size: 18pt;
 }
@@ -116,3 +116,9 @@ p#primera-noticia { /* para todos los P - parrafos con ID: #primera-noticia */
     margin: 10px; /* margen entre elementos */
 }
 
+/* Selectores CSS
+   para ser mas selectivos a la hora de querer usar un estilo en un elemento 
+   solo los botones que esten dentro del cuerpo (body) tendran el color red asignado */
+.cuerpo_body button {
+    color: red;
+}

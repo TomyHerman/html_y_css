@@ -1,0 +1,16 @@
+/* para determinar solo los parrafos que queremos colorear que tengan class: contenedor-div1 */
+.contenedor-div1 p {
+    color: red;
+}
+
+/* anidacion de selectores */
+/* colorear solo los parrafos dentro del main que tenga class: contenedor-div2 */
+section.main .contenedor-div2 p {
+    color: blue;
+}
+
+/* dentro del contenedor-div2, solo colorear el boton de amarillo */
+.contenedor-div2 #boton-contenedor {
+    background-color: yellow;
+}
+
