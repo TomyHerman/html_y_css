@@ -1,15 +1,21 @@
+/*  SIN Especificidad
+    ELEMENTOS   etiqueta basica - h1
+    CLASS       punto .
+    ID          #
+*/
 /* Crea un botón con el texto "Pasa por encima" (TIP: Este texto debes agregarlo a través de un pseudo-elemento) */
-#button-id::before {
+.button-id::before {
     content: "Pasa por encima";
 }
 
 /* Utiliza las pseudo-clases para que cuando se pase el ratón por encima de este botón, el texto se vuelva blanco y el fondo de color verde */
-#button-id:hover {
+#button-id:hover  {
     color: white;
     background-color: green;
 }
 
 /* Utiliza los pseudo-elementos para cambiar el texto del botón a "¡Hecho!" */
-#button-id::after {
-    content: "¡Hecho!";
+.button-id:after #button-id:after {
+    content: " "; 
+    content: "¡Hecho!"; 
 }
